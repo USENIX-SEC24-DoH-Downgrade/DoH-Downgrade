@@ -296,10 +296,8 @@ if __name__ == '__main__':
         prog_logger.info(f"Experiemnt {exp_count} / {REP_COUNT} now begins")
         print(f"Experiemnt {exp_count} / {REP_COUNT} now begins")
 
-        # countries = ["CZ", "AF", "AT", "BW", "CA", "CN", "DZ", "GB", "IL", "IN", "IR", "IT", "KE", "KZ", "LB", "LY", "MM", "PS", "RW", "SA", "TR", "ZW"] # CZ: Control group
-        # countries = ["CZ", "AE", "AF", "AT", "BA", "BW", "CA", "CL", "CN", "CR", "EC", "EG", "GB", "HR", "IL", "IR", "KE", "KZ", "LA", "LK", "LY", "MD", "MM", "PS", "PY", "RU", "RW", "ZW"]
-        countries = ["EE", "AE", "AF", "AL", "AT", "BW", "BY", "CI", "CN", "CR", "DZ", "EG", "GB", "GH", "IL", "IR", "KE", "KZ", "LA", "LK", "LY", "NP", "PA", "PH", "PY", "RU", "SY", "ZW"] # EE: Control group
-        
+        countries = ["EE", "AE", "AF", "AL", "AT", "BW", "BY", "CI", "CN", "CR", "DZ", "EC", "EG", "GB", "GH", "IL", "IR", "KE", "KZ", "LA", "LK", "LY", "MD", "MM", "NP", "PA", "PH", "PY", "RU", "RW", "SY", "TG", "ZW"] # EE: Control group
+
         # Exclude countries which already have more than MAX_NUM_IP IPs
         countries = sorted(list(set(countries) - set(sat_list)))
 
